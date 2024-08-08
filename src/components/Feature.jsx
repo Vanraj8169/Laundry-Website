@@ -51,7 +51,7 @@ const Feature = () => {
         variants={containerVariants}
       >
         <motion.div
-          className="bg-secondary-0 ml-5 mr-5 p-4"
+          className="bg-secondary-0 rounded-lg ml-5 mr-5 p-4 sm:m-0 "
           variants={itemVariants}
         >
           <div>
@@ -69,7 +69,7 @@ const Feature = () => {
           </p>
         </motion.div>
         <motion.div
-          className="bg-secondary-0 ml-5 mr-5 p-4"
+          className="bg-secondary-0 rounded-lg  ml-5 mr-5 p-4"
           variants={itemVariants}
         >
           <div>
@@ -90,7 +90,7 @@ const Feature = () => {
           </div>
         </motion.div>
         <motion.div
-          className="bg-secondary-0 ml-5 mr-5 p-4"
+          className="bg-secondary-0 rounded-lg ml-5 mr-5 p-4 sm:mx-0"
           variants={itemVariants}
         >
           <div>
