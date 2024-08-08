@@ -26,7 +26,7 @@ const Feature = () => {
 
   return (
     <motion.div
-      className="flex flex-col justify-center items-center mt-16"
+      className="flex flex-col justify-center items-center mt-16 sm:ml-20 sm:mr-20"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -37,7 +37,7 @@ const Feature = () => {
           Welcome to <br />
           <span className="text-tertiary-0">That Laundry Shop!</span>
         </h1>
-        <div className="md:pl-96 md:pr-96 p-5">
+        <div className="px-5 sm:px-80">
           <p className="mt-3 font-light text-center">
             Since 2017, we have been dedicated to providing top-notch laundry
             services in Bangkok. What started with a small 36sqm shop in 15
