@@ -24,7 +24,7 @@ const NavBar = () => {
               <a
                 key={index}
                 href="#"
-                className="font-medium hover:text-primary"
+                className="font-medium hover:text-blue-900"
               >
                 {item}
               </a>
