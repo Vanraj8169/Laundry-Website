@@ -93,40 +93,30 @@ const NavBar = () => {
                 href="#"
                 className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
               >
-                Pricing
+                Home
               </a>
               <a
                 href="#"
                 className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
               >
-                Docs
+                Services
               </a>
               <a
                 href="#"
                 className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
               >
-                Changelog
+                Testimonials
               </a>
               <a
                 href="#"
                 className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
               >
-                Blogs
-              </a>
-              <a
-                href="#"
-                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
-              >
-                Login
+                Contact Us
               </a>
             </div>
             <div className="h-[1px] bg-gray-300"></div>
-            <button className=" w-full mt-6 flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50">
-              <img
-                src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg"
-                alt="logo"
-              />
-              <span>Electron Developers</span>
+            <button className="mt-3 ml-4 flex gap-2 items-center bg-primary-0 px-6 py-2 rounded-3xl hover:bg-opacity-80">
+              <span className="text-white">Contact Us</span>
             </button>
           </div>
         )}
