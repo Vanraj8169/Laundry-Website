@@ -5,7 +5,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="bg-primary-0 h-6 w-full flex items-center justify-center">
+      <div className="bg-primary-0 h-6 w-full flex items-center justify-center hover:bg-slate-700">
         <span className="text-white">+91 9769152377</span>
       </div>
       <div className="p-3 flex bg-white justify-between items-center">
@@ -33,7 +33,7 @@ const NavBar = () => {
         </div>
 
         <div className="hidden lg:flex flex-1 justify-end">
-          <button className="flex gap-2 items-center bg-primary-0 px-6 py-2 rounded-3xl hover:bg-opacity-80">
+          <button className="flex gap-2 items-center bg-primary-0 px-6 py-2 rounded-3xl hover:bg-primary-hover">
             <span className="text-white">Contact Us</span>
           </button>
         </div>
@@ -109,7 +109,7 @@ const NavBar = () => {
               </a>
               <a
                 href="#"
-                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+                className="font-medium m-3 p-3 hover:bg-primary-hover block rounded-lg"
               >
                 Contact Us
               </a>
