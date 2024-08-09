@@ -1,5 +1,6 @@
 import ContactUs from "./components/ContactUs";
 import Feature from "./components/Feature";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import Services from "./components/Services";
@@ -14,6 +15,7 @@ function App() {
       <Services />
       <Testimonials />
       <ContactUs />
+      <Footer />
     </>
   );
 }

@@ -68,7 +68,8 @@ const ContactUs = () => {
   );
 
   return (
-    <div className="mt-12 sm:ml-20 sm:mr-20 bg-tertiary-0 text-white rounded-lg">
+    <div>
+      <div className="mt-12 sm:ml-20 sm:mr-20 bg-tertiary-0 text-white rounded-lg">
       <h1 className="font-semibold text-3xl text-center py-10">Contact Us</h1>
       <Formik
         initialValues={initialValues}
@@ -153,6 +154,10 @@ const ContactUs = () => {
       </Formik>
       <ToastContainer />
     </div>
+    <div className="my-16"></div>
+    </div>
+
+
   );
 };
 
