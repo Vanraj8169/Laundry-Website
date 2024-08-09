@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [navDialog, setNavDialog] = useState(false);
@@ -11,31 +12,59 @@ const NavBar = () => {
       <div className="p-3 flex bg-white justify-between items-center">
         <a href="#" id="brand" className="flex gap-2 items-center flex-1">
           <img
-            src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png"
+            src="https://i.ibb.co/FDJwhxg/The-Suresh-Laundry-1.png"
             alt="logo"
             className="object-cover max-w-12 max-h-12 w-12 h-12"
           />
-          <span className="text-lg font-bold font-primary">ToDesktop</span>
+          <span className="text-lg font-bold font-primary">
+            The Suresh Laundry
+          </span>
         </a>
 
         <div id="nav-menu" className="hidden lg:flex gap-12">
-          {["Home", "Services", "Testimonials", "Contact us"].map(
-            (item, index) => (
-              <a
-                key={index}
-                href="#"
-                className="font-medium hover:text-blue-900"
-              >
-                {item}
-              </a>
-            )
-          )}
+          <Link
+            to="hero"
+            smooth={true}
+            duration={500}
+            className="font-medium hover:text-blue-900 cursor-pointer"
+          >
+            Home
+          </Link>
+          <Link
+            to="services"
+            smooth={true}
+            duration={500}
+            className="font-medium hover:text-blue-900 cursor-pointer"
+          >
+            Services
+          </Link>
+          <Link
+            to="testimonials"
+            smooth={true}
+            duration={500}
+            className="font-medium hover:text-blue-900 cursor-pointer"
+          >
+            Testimonials
+          </Link>
+          <Link
+            to="footer"
+            smooth={true}
+            duration={500}
+            className="font-medium hover:text-blue-900 cursor-pointer"
+          >
+            Address
+          </Link>
         </div>
 
         <div className="hidden lg:flex flex-1 justify-end">
-          <button className="flex gap-2 items-center bg-primary-0 px-6 py-2 rounded-3xl hover:bg-primary-hover">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="flex gap-2 items-center bg-primary-0 px-6 py-2 rounded-3xl hover:bg-primary-hover cursor-pointer"
+          >
             <span className="text-white">Contact Us</span>
-          </button>
+          </Link>
         </div>
 
         <button className="p-2 lg:hidden" onClick={() => setNavDialog(true)}>
@@ -60,12 +89,12 @@ const NavBar = () => {
             <div id="nav-bar" className="flex justify-between">
               <a href="#" id="brand" className="flex gap-2 items-center">
                 <img
-                  src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png"
+                  src="https://i.ibb.co/FDJwhxg/The-Suresh-Laundry-1.png"
                   alt="logo"
                   className="object-cover max-w-12 max-h-12 w-12 h-12"
                 />
                 <span className="text-lg font-medium font-display">
-                  ToDesktop
+                  The Suresh Laundry
                 </span>
               </a>
               <button
@@ -89,35 +118,40 @@ const NavBar = () => {
               </button>
             </div>
             <div className="mt-6">
-              <a
-                href="#"
-                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg cursor-pointer"
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+              </Link>
+              <Link
+                to="services"
+                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg cursor-pointer"
               >
                 Services
-              </a>
-              <a
-                href="#"
-                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+              </Link>
+              <Link
+                to="testimonials"
+                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg cursor-pointer"
               >
                 Testimonials
-              </a>
-              <a
-                href="#"
-                className="font-medium m-3 p-3 hover:bg-primary-hover block rounded-lg"
+              </Link>
+              <Link
+                to="footer"
+                className="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg cursor-pointer"
               >
-                Contact Us
-              </a>
+                Address
+              </Link>
             </div>
             <div className="h-[1px] bg-gray-300"></div>
-            <button className="mt-3 ml-4 flex gap-2 items-center bg-primary-0 px-6 py-2 rounded-3xl hover:bg-opacity-80">
+            <Link
+              to="contact"
+              className="mt-3 ml-4 inline-flex gap-2 items-center bg-primary-0 px-6 py-2 rounded-3xl hover:bg-opacity-80 cursor-pointer"
+            >
               <span className="text-white">Contact Us</span>
-            </button>
+            </Link>
           </div>
         )}
       </div>

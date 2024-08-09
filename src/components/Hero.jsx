@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
     <motion.main
+      id="hero"
       className="flex flex-col md:flex-row bg-secondary-0"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -38,12 +40,22 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <button className="rounded-3xl bg-primary-0 text-white px-5 py-2 hover:bg-primary-hover sm:px-6 sm:py-3 md:px-8 md:py-4 sm:rounded-full md:rounded-full lg:rounded-full">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="rounded-3xl bg-primary-0 text-white px-5 py-2 hover:bg-primary-hover sm:px-6 sm:py-3 md:px-8 md:py-4 sm:rounded-full md:rounded-full lg:rounded-full cursor-pointer"
+          >
             Book Now
-          </button>
-          <button className="rounded-3xl px-5 py-2 border border-primary-0 hover:bg-primary-0 hover:text-white sm:px-6 sm:py-3 md:px-8 md:py-4 sm:rounded-full md:rounded-full lg:rounded-full">
-            Schedule Time
-          </button>
+          </Link>
+          <Link
+            to="feature"
+            smooth={true}
+            duration={500}
+            className="rounded-3xl px-5 py-2 border border-primary-0 hover:bg-primary-0 hover:text-white sm:px-6 sm:py-3 md:px-8 md:py-4 sm:rounded-full md:rounded-full lg:rounded-full cursor-pointer"
+          >
+            See more
+          </Link>
         </motion.div>
       </motion.div>
       <motion.div

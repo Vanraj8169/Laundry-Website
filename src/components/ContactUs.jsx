@@ -57,6 +57,7 @@ const ContactUs = () => {
       });
   };
 
+  // eslint-disable-next-line react/prop-types
   const CustomErrorMessage = ({ name }) => (
     <ErrorMessage name={name}>
       {(msg) => (
@@ -68,96 +69,94 @@ const ContactUs = () => {
   );
 
   return (
-    <div>
+    <div id="contact">
       <div className="mt-12 sm:ml-20 sm:mr-20 bg-tertiary-0 text-white rounded-lg">
-      <h1 className="font-semibold text-3xl text-center py-10">Contact Us</h1>
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={onSubmit}
-      >
-        {({ isSubmitting }) => (
-          <Form className="flex flex-col gap-5 justify-center mx-5 sm:mx-52 pb-10">
-            <div className="flex flex-col gap-2 sm:flex-row sm:gap-5">
-              <div className="flex flex-col sm:w-1/2 gap-2">
-                <label htmlFor="name" className="font-medium">
-                  Name*
-                </label>
-                <Field
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  className="rounded-full px-5 py-3 text-black
+        <h1 className="font-semibold text-3xl text-center py-10">Contact Us</h1>
+        <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={onSubmit}
+        >
+          {({ isSubmitting }) => (
+            <Form className="flex flex-col gap-5 justify-center mx-5 sm:mx-52 pb-10">
+              <div className="flex flex-col gap-2 sm:flex-row sm:gap-5">
+                <div className="flex flex-col sm:w-1/2 gap-2">
+                  <label htmlFor="name" className="font-medium">
+                    Name*
+                  </label>
+                  <Field
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="rounded-full px-5 py-3 text-black
                    focus:outline-none focus:ring-2 focus:ring-secondary-0 focus:ring-offset-2 focus:ring-offset-white
                    transition duration-150 ease-in-out"
-                />
-                <CustomErrorMessage name="name" />
-              </div>
-              <div className="flex flex-col gap-2 sm:w-1/2">
-                <label htmlFor="phone" className="font-medium">
-                  Phone*
-                </label>
-                <Field
-                  type="tel"
-                  name="phone"
-                  placeholder="+9769152377"
-                  className="rounded-full px-5 py-3 text-black
+                  />
+                  <CustomErrorMessage name="name" />
+                </div>
+                <div className="flex flex-col gap-2 sm:w-1/2">
+                  <label htmlFor="phone" className="font-medium">
+                    Phone*
+                  </label>
+                  <Field
+                    type="tel"
+                    name="phone"
+                    placeholder="+91 9769152377"
+                    className="rounded-full px-5 py-3 text-black
                     focus:outline-none focus:ring-2 focus:ring-secondary-0 focus:ring-offset-2 focus:ring-offset-white
                     transition duration-150 ease-in-out"
-                />
-                <CustomErrorMessage name="phone" />
+                  />
+                  <CustomErrorMessage name="phone" />
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="font-medium">
-                Email*
-              </label>
-              <Field
-                type="email"
-                name="email"
-                placeholder="Your email"
-                className="rounded-full px-5 py-3 text-black
+              <div className="flex flex-col gap-2">
+                <label htmlFor="email" className="font-medium">
+                  Email*
+                </label>
+                <Field
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  className="rounded-full px-5 py-3 text-black
                  focus:outline-none focus:ring-2 focus:ring-secondary-0 focus:ring-offset-2 focus:ring-offset-white
                  transition duration-150 ease-in-out"
-              />
-              <CustomErrorMessage name="email" />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="message">Your Message</label>
-              <Field
-                as="textarea"
-                name="message"
-                placeholder="Your Message"
-                rows="4"
-                className="rounded-lg px-5 py-2 text-black
+                />
+                <CustomErrorMessage name="email" />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="message">Your Message</label>
+                <Field
+                  as="textarea"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="4"
+                  className="rounded-lg px-5 py-2 text-black
                  focus:outline-none focus:ring-2 focus:ring-secondary-0 focus:ring-offset-2 focus:ring-offset-white
                  transition duration-150 ease-in-out"
-              />
-            </div>
-            <div className="flex gap-6 items-center justify-center">
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="rounded-3xl bg-white text-primary-0 px-5 py-2 hover:bg-slate-100 disabled:opacity-50"
-              >
-                {isSubmitting ? "Submitting..." : "Submit"}
-              </button>
-              <span>
-                or call{" "}
-                <a href="tel:9769152377" className="underline">
-                  +91 9769152377
-                </a>
-              </span>
-            </div>
-          </Form>
-        )}
-      </Formik>
-      <ToastContainer />
+                />
+              </div>
+              <div className="flex gap-6 items-center justify-center">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="rounded-3xl bg-white text-primary-0 px-5 py-2 hover:bg-slate-100 disabled:opacity-50"
+                >
+                  {isSubmitting ? "Submitting..." : "Submit"}
+                </button>
+                <span>
+                  or call{" "}
+                  <a href="tel:9769152377" className="underline">
+                    +91 9769152377
+                  </a>
+                </span>
+              </div>
+            </Form>
+          )}
+        </Formik>
+        <ToastContainer />
+      </div>
+      <div className="my-16"></div>
     </div>
-    <div className="my-16"></div>
-    </div>
-
-
   );
 };
 

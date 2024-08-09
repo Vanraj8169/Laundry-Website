@@ -1,16 +1,16 @@
 const Footer = () => {
   return (
-    <div>
+    <div id="footer">
       <div className="bg-primary-0 text-white flex flex-col sm:flex-row">
         <div className="flex flex-col justify-center px-5 pt-5 items-center sm:mx-20 sm:flex-row">
           <img
-            src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png"
+            src="https://i.ibb.co/FDJwhxg/The-Suresh-Laundry-1.png"
             alt="logo"
-            className=""
+            className="object-cover max-w-12 max-h-12 w-12 h-12"
           />
           <p className="w-1/2 text-center font-light">
             we have been dedicated to providing top-notch laundry services in
-            Mumbai.
+            South Mumbai.
           </p>
         </div>
         <div className="relative">

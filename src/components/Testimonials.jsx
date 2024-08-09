@@ -22,7 +22,8 @@ const Testimonials = () => {
 
   return (
     <motion.div
-      className="mt-12 sm:ml-20 sm:mr-20 bg-secondary-0"
+      id="testimonials"
+      className="mt-12 pb-10 sm:ml-20 sm:mr-20 bg-secondary-0"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -41,12 +42,12 @@ const Testimonials = () => {
         >
           <div className="flex flex-row gap-3  items-center my-3">
             <img
-              src="https://www.zoho.com/inventory/case-study/images/maxime-loiselle.jpg"
+              src="https://media.licdn.com/dms/image/D5603AQHOQoHqUz1_Wg/profile-displayphoto-shrink_400_400/0/1693114880809?e=2147483647&v=beta&t=taVqIN_5Lh1y2SaaBI2bfTOX5JD5LBvha0FTKl8ZJZU"
               alt="client"
               className="w-14 h-14 rounded-full"
             />
             <div>
-              <h1 className="text-lg font-semibold">Julita Czyzewska</h1>
+              <h1 className="text-lg font-semibold">Priya S</h1>
               {[...Array(5)].map((_, index) => (
                 <FontAwesomeIcon
                   key={index}
@@ -58,9 +59,11 @@ const Testimonials = () => {
           </div>
           <div>
             <p className="my-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              quam aliquid nam minima pariatur, deserunt sunt odio atque non
-              maxime?
+              &quot;I&apos;ve been using The Suresh Laundry for months, and I
+              couldn&apos;t be happier. Their attention to detail is
+              exceptional, and my clothes always come back looking pristine.
+              They handle everything from delicate fabrics to everyday wear with
+              the utmost care. Highly recommend!&quot;
             </p>
           </div>
         </motion.div>
@@ -87,9 +90,11 @@ const Testimonials = () => {
           </div>
           <div>
             <p className="my-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              quam aliquid nam minima pariatur, deserunt sunt odio atque non
-              maxime?
+              &quot;I&apos;ve been a loyal customer of The Suresh Laundry for a
+              while now, and I&apos;m consistently impressed by their
+              exceptional service. Their attention to detail and commitment to
+              quality are evident in every item they handle. It&apos;s always a
+              pleasure to get my clothes back looking their best.&quot;
             </p>
           </div>
         </motion.div>

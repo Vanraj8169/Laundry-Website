@@ -20,6 +20,7 @@ const Services = () => {
 
   return (
     <motion.div
+      id="services"
       className="mt-16 sm:ml-20 sm:mr-20"
       variants={containerVariants}
       initial="hidden"
@@ -29,7 +30,7 @@ const Services = () => {
       <div>
         <h1 className="font-semibold text-3xl text-center">Our Services</h1>
         <p className="font-light p-5 text-center">
-          We are one of the fastest laundromats in Bangkok
+          We are one of the fastest laundromats in South Mumbai
         </p>
       </div>
       <motion.div
