@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="h-[0.6px] w-full bg-slate-500"></div>
       <div className="flex gap-2 bg-primary-0 text-slate-400 items-center justify-center">
         <span className="text-2xl">&copy;</span>
-        <p className=" text-center tracking-widest"> 2024 THAT LAUNDRY SHOP</p>
+        <p className=" text-center tracking-widest"> 2024 THE SURESH LAUNDRY</p>
       </div>
     </div>
   );
